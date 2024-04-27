@@ -7,6 +7,7 @@ campus = []
 faculty = []
 program = []
 language_type = []
+
 with open('course.json') as f:
     courses = json.load(f)
     for course in courses:
@@ -16,6 +17,7 @@ with open('course.json') as f:
         faculty.append(course["faculty_name_en"])
         program.append((course["program_name_en"]))
         language_type.append((course["program_type_name_th"]))
+
 uni = pd.DataFrame([university_id, university_name, campus, faculty, program, language_type]).transpose()
 uni.columns = ['UNI_ID', 'UNI_NAME'], 'CAMPUS, FACULTY, PROGRAM, LANGUAGE_TYPE'
 uni.dropna(inplace=True)
