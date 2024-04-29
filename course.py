@@ -19,4 +19,4 @@ uni.columns = ['UNI_ID', 'UNI_NAME', 'CAMPUS', 'FACULTY', 'DEPT', 'PROGRAM', 'LA
 uni.dropna(inplace=True)
 
 # Save DataFrame to CSV
-uni.to_csv('/Users/thanapatpiyamssakul/coding/first_year/de141/courses0.csv', index=False)
+uni.to_csv('/Users/thanapatpiyamssakul/coding/first_year/de141/courses1.csv', index=True)
